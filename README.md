@@ -1,7 +1,7 @@
 # Afterglow - _Live in the afterglow_ 
 ### Cocktail Bar Website
 
-![Cover](public/assets/readme/girl-in-the-bar.jpg)
+![Cover](https://github.com/GuioMav/Afterglow/blob/main/Public/assets/readme/girl-in-the-bar.jpg)
 
 ---
 ## Table of Contents
@@ -32,7 +32,7 @@ It is part of The POE assignment for WEDE5020 of [Rosebank College](https://rose
 
 ## Design and Content
 
-![Figma Design Image](public/assets/readme/design-cover.png)
+![Figma Design Image](https://github.com/GuioMav/Afterglow/blob/main/Public/assets/readme/design-cover.png)
 
 Figma Design: [Figma Link](https://www.figma.com/design/YGf4UthacPCJxOdJAa6ca5/Afterglow---Website-Design?node-id=2-2&m=dev&t=ab8c2p098X9T2Sqq-1)
 
