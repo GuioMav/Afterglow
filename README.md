@@ -13,6 +13,8 @@
 - [Plans for Future Enhancements](#plans-for-future-enhancements)
 - [References](#references)
 
+- [Part 2 - updates and improvements](#part-2---updates-and-improvements)
+
 
 ## Project Overview
 Afterglow is a cocktail bar website designed to provide users with an engaging experience. The site features a modern design, showcasing a variety of cocktails, a gallery of images, customer reviews, and a contact section for inquiries.
@@ -82,3 +84,13 @@ This website is structured as a single-page application with the following secti
 - Deployment is managed through [Vercel](https://vercel.com/).
 - Version control is handled using GitHub.
 - This project is part of the curriculum for WEDE5020 at [Rosebank College](https://rosebankcollege.com).
+
+
+## Part 2 - updates and improvements
+
+#### Feedback and Issues from the first submission
+With the feedback received from the first version of the project, the following updates have been made to fix the previous issues:
+
+- The site now featured 5 pages to comply with the project requirements.
+- The folder sttructure has been refactored to comply with the project requirements.
+- 
