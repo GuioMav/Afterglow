@@ -1,7 +1,7 @@
 # Afterglow - _Live in the afterglow_ 
 ### Cocktail Bar Website
 
-![Cover](public/assets/readme/girl-in-the-bar.jpg)
+![Cover](https://github.com/GuioMav/Afterglow/blob/main/Public/assets/readme/girl-in-the-bar.jpg)
 
 ---
 ## Table of Contents
@@ -34,7 +34,7 @@ It is part of The POE assignment for WEDE5020 of [Rosebank College](https://rose
 
 ## Design and Content
 
-![Figma Design Image](public/assets/readme/design-cover.png)
+![Figma Design Image](https://github.com/GuioMav/Afterglow/blob/main/Public/assets/readme/design-cover.png)
 
 Figma Design: [Figma Link](https://www.figma.com/design/YGf4UthacPCJxOdJAa6ca5/Afterglow---Website-Design?node-id=2-2&m=dev&t=ab8c2p098X9T2Sqq-1)
 
@@ -84,6 +84,7 @@ This website is structured as a single-page application with the following secti
 - Deployment is managed through [Vercel](https://vercel.com/).
 - Version control is handled using GitHub.
 - This project is part of the curriculum for WEDE5020 at [Rosebank College](https://rosebankcollege.com).
+<<<<<<< HEAD
 
 
 ## Part 2 - updates and improvements
@@ -94,3 +95,5 @@ With the feedback received from the first version of the project, the following 
 - The site now featured 5 pages to comply with the project requirements.
 - The folder sttructure has been refactored to comply with the project requirements.
 - 
+=======
+>>>>>>> 14ffcc9ec22c1de207bd5e252b19142703504da9
