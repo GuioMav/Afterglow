@@ -30,7 +30,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     padding: 1.2rem 2rem;
-    background: #201c2b;
+    background: #000000;
     box-shadow: 0 2px 8px rgba(0,0,0,0.09);
 }
 
@@ -53,16 +53,217 @@ a:hover {
 }
 
 /* MAIN CONTENT */
-main {
+/* main {
     flex: 1;
     padding: 2.5rem 1.5rem 2rem 1.5rem;
     max-width: 900px;
     margin: 0 auto;
+} */
+
+.mojito-hero-section {
+  position: relative;
+  background: #000;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Tropical leaves */
+.mojito-leaf {
+  position: absolute;
+  z-index: 2;
+  top: 55px;
+}
+.mojito-leaf--left {
+  left: 0;
+}
+.mojito-leaf--right {
+  right: 0;
+  top: 50px;
+}
+.mojito-leaf img {
+  width: 160px;
+  height: auto;
+}
+
+/* Video background */
+.mojito-hero-video-bg {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.mojito-hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  background: #000;
+}
+
+/* Content overlay */
+.mojito-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  pointer-events: none; /* So video stays interactive if needed */
+}
+
+.mojito-hero-title-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mojito-hero-title {
+  font-family: 'Mona Sans', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 7.5vw;
+  letter-spacing: -0.04em;
+  color: #fff;
+  background: linear-gradient(180deg, #fff 50%, #aaa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin: 0 0 -2.5rem 0;
+  line-height: 1;
+  text-shadow: 0 4px 36px #000a;
+  pointer-events: auto;
+}
+
+.mojito-hero-text {
+  position: absolute;
+  z-index: 8;
+  max-width: 330px;
+  color: #fff;
+  pointer-events: auto;
+}
+
+.mojito-hero-text--left {
+  left: 0;
+  bottom: 17%;
+  text-align: left;
+}
+.mojito-hero-text-label {
+  font-family: 'Mona Sans', Arial, sans-serif;
+  font-size: 1rem;
+  color: #fffbe2;
+  opacity: 0.9;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+.mojito-hero-text-highlight {
+  font-family: 'Mona Sans', Arial, sans-serif;
+  font-size: 2.15rem;
+  font-weight: 800;
+  color: #ffe188;
+  margin-top: 0.5rem;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.mojito-hero-text--right {
+  right: 0;
+  bottom: 17%;
+  max-width: 320px;
+  text-align: left;
+  color: #fff;
+  font-size: 1.08rem;
+}
+.mojito-hero-link {
+  display: inline-block;
+  margin-top: 0.7em;
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 1.03rem;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+  pointer-events: auto;
+}
+.mojito-hero-link:hover {
+  color: #ffe188;
+}
+
+.mojito-hero-arrow {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 2.1rem;
+  opacity: 0.8;
+  z-index: 10;
+  animation: mojito-bounce 1.5s infinite;
+  pointer-events: auto;
+}
+@keyframes mojito-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(12px);}
+}
+
+@media (max-width: 1000px) {
+  .mojito-hero-title {
+    font-size: 10vw;
+  }
+  .mojito-hero-text--left,
+  .mojito-hero-text--right {
+    max-width: 250px;
+    font-size: 1rem;
+  }
+  .mojito-leaf img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 700px) {
+  .mojito-hero-section {
+    min-height: 600px;
+  }
+  .mojito-hero-title {
+    font-size: 2.7rem;
+    margin-bottom: -1.2rem;
+  }
+  .mojito-hero-content {
+    padding-top: 1.5rem;
+    height: 98vw;
+  }
+  .mojito-hero-text--left,
+  .mojito-hero-text--right {
+    position: static;
+    bottom: unset;
+    right: unset;
+    left: unset;
+    margin: 1.5rem auto 0 auto;
+    text-align: center;
+    max-width: 96vw;
+  }
+  .mojito-hero-arrow {
+    bottom: 10px;
+  }
+  .mojito-leaf {
+    display: none;
+  }
 }
 
 /* FOOTER */
 footer {
-    background: #201c2b;
+    background: #000000;
     color: #ddd;
     padding: 2rem 2rem 1rem 2rem;
     display: flex;
@@ -112,4 +313,303 @@ footer .copyright {
     main {
         padding: 1.2rem 0.5rem 1.2rem 0.5rem;
     }
+}
+
+
+
+/* Section Index */
+.cocktail-feature {
+  background: #000000;
+  color: #fff;
+  padding: 3rem 1rem 2.5rem 1rem;
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Mona Sans', Arial, sans-serif;
+}
+.cocktail-feature__top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.cocktail-feature__badge {
+  display: inline-block;
+  background: #fff;
+  color: #18181b;
+  font-size: 1rem;
+  border-radius: 18px;
+  padding: 0.4em 1.1em;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  letter-spacing: 0.03em;
+}
+.cocktail-feature__title {
+  flex: 1 1 360px;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.12;
+  margin-bottom: 0.7rem;
+  font-family: 'Mona Sans', Arial, sans-serif;
+  letter-spacing: -0.02em;
+  min-width: 270px;
+}
+.cocktail-feature__desc {
+  flex: 1 1 260px;
+  max-width: 340px;
+  font-size: 1.08rem;
+  color: #ddd;
+  margin-left: auto;
+  margin-top: 0.4rem;
+}
+.cocktail-feature__rating {
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.cocktail-feature__stars {
+  color: #ffb347;
+  font-size: 1.18rem;
+  letter-spacing: 0.13em;
+}
+.cocktail-feature__score {
+  font-size: 1.11rem;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 0.25rem;
+}
+.cocktail-feature__reviews {
+  font-size: 0.98rem;
+  color: #aaa;
+  margin-right: 1em;
+}
+.cocktail-feature__avatars {
+  display: inline-flex;
+  align-items: center;
+  gap: -0.8em;
+  margin-left: 0.5em;
+}
+.cocktail-feature__avatars img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #18181b;
+  object-fit: cover;
+  margin-left: -10px;
+  background: #333;
+}
+.cocktail-feature__count {
+  background: #232323;
+  color: #fff;
+  border-radius: 14px;
+  font-size: 0.95rem;
+  padding: 0.1em 0.7em;
+  margin-left: 0.3em;
+}
+
+.cocktail-feature__media-row {
+  display: flex;
+  align-items: stretch;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem;
+  flex-wrap: wrap;
+}
+.cocktail-feature__img-col {
+  flex: 1 1 240px;
+  min-width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cocktail-feature__img {
+  width: 100%;
+  max-width: 370px;
+  height: 215px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.18);
+}
+.cocktail-feature__crafted {
+  flex: 1 1 220px;
+  background: #191922;
+  border-radius: 16px;
+  padding: 2.2rem 1.5rem;
+  box-shadow: 0 2px 9px rgba(0,0,0,0.09);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 220px;
+  max-width: 280px;
+}
+.cocktail-feature__crafted h3 {
+  font-family: 'Mona Sans', Arial, sans-serif;
+  font-size: 1.32rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.cocktail-feature__crafted ul {
+  list-style: none;
+  color: #fff;
+  font-size: 1.04rem;
+  padding-left: 0;
+}
+.cocktail-feature__crafted li {
+  margin-bottom: 0.8em;
+  padding-left: 1.2em;
+  position: relative;
+}
+.cocktail-feature__crafted li:before {
+  content: "✔";
+  color: #ff7f50;
+  font-size: 1.1em;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.cocktail-feature__gallery-row {
+  display: flex;
+  gap: 1.6rem;
+  margin-top: 0.8rem;
+}
+.cocktail-feature__gallery-row .cocktail-feature__img {
+  width: 100%;
+  max-width: 400px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 18px;
+  background: #222;
+}
+
+@media (max-width: 1050px) {
+  .cocktail-feature__top {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .cocktail-feature__desc {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .cocktail-feature__media-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .cocktail-feature__gallery-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+
+.craft-passion-section {
+  width: 100%;
+  background: #000000;
+  padding: 0 0 3.5rem 0;
+}
+
+.craft-passion-bg {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 2.5rem;
+}
+
+.craft-passion-image-container {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 36px;
+  overflow: hidden;
+  background: #191919;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.15);
+  margin-bottom: 2.5rem;
+}
+
+.craft-passion-main-image {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 36px;
+}
+
+.craft-passion-text h2 {
+  font-family: 'Mona Sans', Arial, sans-serif;
+  font-size: 2.35rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.01em;
+}
+
+.craft-passion-text p {
+  font-family: 'Mona Sans', Arial, sans-serif;
+  color: #e1e1e1;
+  font-size: 1.13rem;
+  margin-bottom: 0;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* Decorative cocktail illustrations */
+.craft-passion-decor {
+  position: absolute;
+  z-index: 2;
+  width: 95px;
+  height: auto;
+  top: 12px;
+}
+
+.craft-passion-decor--left {
+  left: -20px;
+  top: 30px;
+}
+
+.craft-passion-decor--right {
+  right: -20px;
+  top: 50px;
+}
+
+.craft-passion-decor--far-right {
+  right: 30px;
+  top: 320px;
+  width: 80px;
+}
+
+@media (max-width: 900px) {
+  .craft-passion-image-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .craft-passion-main-image {
+    height: 270px;
+  }
+  .craft-passion-decor {
+    width: 66px;
+  }
+  .craft-passion-decor--far-right {
+    width: 55px;
+    top: 180px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .craft-passion-bg {
+    padding-top: 1rem;
+  }
+  .craft-passion-main-image {
+    height: 180px;
+    border-radius: 18px;
+  }
+  .craft-passion-text h2 {
+    font-size: 1.3rem;
+  }
+  .craft-passion-decor {
+    display: none;
+  }
 }
