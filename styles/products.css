@@ -1,0 +1,151 @@
+body {
+  background: #000000;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+.cocktail-section {
+  width: 100vw;
+  min-height: 100vh;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.decor-leaf {
+  position: absolute;
+  width: 170px;
+  z-index: 1;
+}
+.decor-leaf.left {
+  bottom: 32px;
+  left: 32px;
+  transform: rotate(-10deg);
+}
+.decor-leaf.right {
+  bottom: 32px;
+  right: 32px;
+  transform: rotate(10deg) scaleX(-1);
+}
+.cocktail-content {
+  display: flex;
+  width: 90vw;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+}
+.menu-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 48px 0 0 0;
+  min-width: 270px;
+}
+.menu-title {
+  font-size: 1.2rem;
+  margin-bottom: 32px;
+  color: #fff;
+  font-weight: 400;
+}
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.menu-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+.item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.item-name {
+  font-family: 'Crete Round', serif;
+  color: #eed28c;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+  letter-spacing: 0.5px;
+}
+.item-desc {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.item-price {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #fff;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+.center-image {
+  flex: 1.1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 420px;
+  position: relative;
+  margin: 0 20px;
+}
+.center-image img {
+  max-width: 100%;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 14px;
+  box-shadow: 0 4px 30px 0 rgba(0,0,0,0.28);
+  background: #222;
+}
+@media (max-width: 1000px) {
+  .cocktail-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+  }
+  .center-image {
+    margin: 36px 0;
+  }
+  .menu-list {
+    align-items: center;
+  }
+  .decor-leaf {
+    width: 110px;
+    bottom: 10px;
+  }
+}
+@media (max-width: 720px) {
+  .cocktail-section {
+    min-height: 100vh;
+    padding-bottom: 70px;
+  }
+  .cocktail-content {
+    flex-direction: column;
+    width: 98vw;
+    gap: 18px;
+    max-width: 99vw;
+  }
+  .center-image {
+    min-width: 180px;
+    min-height: 220px;
+  }
+  .decor-leaf {
+    display: none;
+  }
+  .menu-list {
+    min-width: 0;
+    padding: 24px 0 0 0;
+  }
+}
