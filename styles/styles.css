@@ -1,0 +1,115 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #000000;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #ff7f50;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 2rem;
+    background: #201c2b;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+}
+
+.navbar .logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ff7f50;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar nav a {
+    font-size: 1.08rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* MAIN CONTENT */
+main {
+    flex: 1;
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* FOOTER */
+footer {
+    background: #201c2b;
+    color: #ddd;
+    padding: 2rem 2rem 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    border-top: 2px solid #ff7f50;
+}
+
+footer .footer-logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff7f50;
+    margin-bottom: 0.5rem;
+}
+
+footer .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+footer .footer-address {
+    font-size: 0.98rem;
+    margin-bottom: 0.5rem;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+    font-size: 0.93rem;
+    margin-top: 1rem;
+    color: #aaa;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 700px) {
+    .navbar, footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.2rem;
+    }
+    .navbar nav {
+        gap: 1rem;
+    }
+    main {
+        padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    }
+}
