@@ -4,7 +4,7 @@ const teamMembers = [
 	{ name: "Joana Felix", role: "Security Manager" },
 	{ name: "Rafaela Pill", role: "Bartender" },
 	{ name: "Varicela Jeci", role: "Marketing Manager" },
-	{ name: "Jumilliam Dallas", role: "Cleaner" }
+	{ name: "Michael Soul", role: "Cleaner" }
 ];
 
 const cards = document.querySelectorAll(".card");
